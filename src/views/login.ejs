@@ -1,0 +1,16 @@
+<% - include('templates/header.ejs') %>
+
+    <body>
+        <form method="POST" action="/auth">
+
+            <div>
+                <%= nombre %><input type='text' name='username'>
+            </div>
+            <div>
+                <%= contraseña %><input type='text' name='paswword'>
+            </div>
+            <div> <input type='submit' value='<%= texto %>'> </div>
+
+        </form>
+
+        <% - include('templates/footer.ejs') %>
